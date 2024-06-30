@@ -15,9 +15,31 @@ def main(page: ft.Page):
         # max_lines= 1,
         # overflow= ft.TextOverflow.ELLIPSIS
         # no_wrap= True,
-        selectable= True,
+        selectable= False,
+        size= 30,
+        text_align= ft.TextAlign.CENTER,
+        weight = ft.FontWeight.NORMAL,
     )
-    page.add(t1)
+
+    link_style = ft.TextStyle(color= ft.colors.BLUE, decoration=ft.TextDecoration.UNDERLINE)
+    title_style = ft.TextStyle(
+        bgcolor= ft.colors.AMBER,
+        color= ft.colors.RED,
+        decoration= ft.TextDecoration.OVERLINE,
+        decoration_color= ft.colors.GREEN,
+
+    )
+
+    t2 = ft.Text(
+        spans= [
+            ft.TextSpan(text='Texto com link', style=link_style, url='www.x.com'),
+            ft.TextSpan(text='\ncontinuacao do texto...'),
+            ft.TextSpan(text='Texto em destaque!!! ', style=title_style),
+        ],
+        size= 40,
+    )
+
+    page.add(t1, t2)
 
 
     page.update()
