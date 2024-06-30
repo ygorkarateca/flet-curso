@@ -21,20 +21,28 @@ def main(page: ft.Page):
         weight = ft.FontWeight.NORMAL,
     )
 
-    link_style = ft.TextStyle(color= ft.colors.BLUE, decoration=ft.TextDecoration.UNDERLINE)
+    link_style = ft.TextStyle(
+        color= ft.colors.BLUE, 
+        decoration=ft.TextDecoration.UNDERLINE,
+        )
+
     title_style = ft.TextStyle(
         bgcolor= ft.colors.AMBER,
         color= ft.colors.RED,
         decoration= ft.TextDecoration.OVERLINE,
-        decoration_color= ft.colors.GREEN,
-
+        decoration_color= ft.colors.WHITE,
+        size= 50,
+        decoration_thickness= 5,
+        decoration_style= ft.TextDecorationStyle.SOLID,
+        italic= True,
+        weight= ft.FontWeight.W_100,
     )
 
     t2 = ft.Text(
         spans= [
             ft.TextSpan(text='Texto com link', style=link_style, url='www.x.com'),
-            ft.TextSpan(text='\ncontinuacao do texto...'),
-            ft.TextSpan(text='Texto em destaque!!! ', style=title_style),
+            ft.TextSpan(text='\ncontinuaçao do texto...'),
+            ft.TextSpan(text='URUBU DO PIX!', style=title_style),
         ],
         size= 40,
     )
