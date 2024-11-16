@@ -14,4 +14,4 @@ def main(page: ft.Page):
         tooltip='Flet counter example',
     )
     page.add(img, im2)
-ft.app(target=main, assets_dir='assets', port=8000, view=ft.AppView.WEB_BROWSER)
+ft.app(target=main, assets_dir='assets', view=ft.AppView.WEB_BROWSER)

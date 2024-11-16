@@ -51,4 +51,4 @@ def main(page: ft.Page):
 
 
     page.update()
-ft.app(target=main, assets_dir='Fonts')
+ft.app(target=main, assets_dir='Fonts', view=ft.AppView.WEB_BROWSER)

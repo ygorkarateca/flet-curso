@@ -33,4 +33,4 @@ def main(page: ft.Page):
 
     page.add(t1, t2, img1, img2)
     page.update()
-ft.app(target=main, port=8000, view=ft.AppView.WEB_BROWSER, assets_dir='assets')
+ft.app(target=main, view=ft.AppView.WEB_BROWSER, assets_dir='assets')
