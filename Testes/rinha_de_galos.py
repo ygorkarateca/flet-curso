@@ -33,4 +33,8 @@ def main(page: ft.Page):
 
     page.add(t1, t2, img1, img2)
     page.update()
+<<<<<<< HEAD
 ft.app(target=main, assets_dir='assets', view=ft.AppView.WEB_BROWSER)
+=======
+ft.app(target=main, view=ft.AppView.WEB_BROWSER, assets_dir='assets')
+>>>>>>> c8c26d105014b1161bf5bee24f070de605cb1a72
