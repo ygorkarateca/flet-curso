@@ -9,9 +9,9 @@ def main(page: ft.Page):
         fit=ft.ImageFit.CONTAIN,
     )
    
-    im2 = ft.Image(
+    img2 = ft.Image(
         src= 'images/flet-img.png',
         tooltip='Flet counter example',
     )
-    page.add(img, im2)
-ft.app(target=main, assets_dir='assets', view=ft.AppView.WEB_BROWSER)
+    page.add(img, img2)
+ft.app(main, assets_dir='assets')
